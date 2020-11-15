@@ -1,0 +1,52 @@
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+
+.button {
+  width: 80px;
+  height: 80px;
+}
+
+ /* Top Square */
+.rectangle2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+  height: 75%;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  bottom: 75%;
+  left: 1px;
+  z-index: 1;
+}
+
+/* Bottom Square */
+.rectangle1 {
+  position: relative;
+  width: 75%;
+  height: 75%;
+  background: #FF4E84;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+  top: 12.5%;
+  left: 12.5%;
+  z-index: 0;
+}
+
+.rectangle2:hover {
+  position: relative;
+  bottom: 67.5%;
+  left: 6%;
+  transition: .2s ease-in-out;
+}
+
+.heavy-shadow {
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.8);
+}
+
+.logo-size {
+  font-size: 24px;
+}

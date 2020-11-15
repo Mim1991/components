@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/93a2eb25ef.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="footer">
+    <div class="button">
+      <div class="rectangle1" style="background: yellow"></div>
+      <div class="rectangle2" style="color: yellow"><i class="fab fa-facebook-f logo-size"></i></div>
+    </div>
+    <div class="button">
+      <div class="rectangle1" style="background: #f20089"></div>
+      <div class="rectangle2" style="color: #f20089"><i class="fab fa-twitter logo-size"></i></i></div>
+    </div>
+    <div class="button">
+      <div class="rectangle1" style="background: turquoise"></div>
+      <div class="rectangle2" style="color: turquoise"><i class="fab fa-instagram logo-size"></i></div>
+    </div>
+    <div class="button">
+      <div class="rectangle1" style="background: lime"></div>
+      <div class="rectangle2" style="color: lime"><i class="fab fa-linkedin-in logo-size"></i></div>
+    </div>
+  </div>
+
+  <script>
+  const rectangle2 = document.querySelectorAll(".rectangle2")
+  rectangle2.forEach(element => {
+    element.addEventListener("mouseover", e =>{
+      const rectangle1 = element.previousElementSibling
+      rectangle1.classList.add("heavy-shadow")
+    })
+    element.addEventListener("mouseleave", e => {
+      const rectangle1 = element.previousElementSibling
+      rectangle1.classList.remove("heavy-shadow")
+    })
+  })
+  </script>
+</body>
+</html>
